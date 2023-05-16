@@ -18,8 +18,8 @@ module.exports = (webpackConfigEnv, argv) => {
 			new HtmlWebpackPlugin({
 				inject: false,
 				template: "src/index.ejs",
-				devContentSecurityPolicy:
-					"connect-src 'self' ws://localhost:9000/* 'unsafe-eval'",
+				// devContentSecurityPolicy:
+				// 	"connect-src 'self' ws://localhost:9000/* 'unsafe-eval'",
 
 				templateParameters: {
 					isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
