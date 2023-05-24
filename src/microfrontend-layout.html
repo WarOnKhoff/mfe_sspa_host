@@ -1,9 +1,14 @@
 <single-spa-router>
 	<main>
 		<route default>
-			<application name="@mfe/header"></application>
-			<application name="@mfe/dashboard"></application>
-			<application name="@mfe/details"></application>
+			<div style="display: flex">
+				<div style="flex: 1">
+					<application name="@mfe/header"></application>
+					<application name="@mfe/dashboard"></application>
+					<application name="@mfe/details"></application>
+				</div>
+				<application name="@mfe/sidepanel"></application>
+			</div>
 		</route>
 	</main>
 </single-spa-router>
